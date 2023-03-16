@@ -1,79 +1,389 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 
-<!-- Meta tags for search engines to crawl -->
-<meta name="robots" content="index,follow">
-<meta name="keywords" content="NWPU Campus dataset">
-<link rel="author" href="https://CampusVAD.github.io/">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-	<title>NWPU Campus VAD and VAA dataset</title>
+	<!-- Meta tags for search engines to crawl -->
+	<meta name="robots" content="index,follow">
+	<meta name="keywords" content="NWPU Campus dataset">
+	<link rel="author" href="https://CampusVAD.github.io/">
+
+	<title>NWPU Campus dataset</title>
 	<style>
-@media screen and (max-device-width: 480px){
-  body{
-    -webkit-text-size-adjust: none;
-  }
-}
-p { font-size : 15px; }
+		@media screen and (max-device-width: 480px) {
+			body {
+				-webkit-text-size-adjust: none;
+			}
+		}
 
-h2 { font-size : 30px; margin : 0 ; padding : 0; }
-td { padding: 10px; line-height: normal; background-color: white; }
-table { border: 0; margin: 10px 10px 30px 0px; border-collapse: separate; border-spacing: 0px; background-color: white; }
+		p {
+			font-size: 15px;
+		}
 
-body { padding : 0; font-family : Arial; font-size : 16px; background-color : #ddd; }
+		h2 {
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
 
-.container { width : 900px; margin : 20px auto; border-radius: 10px;  background-color : #fff; padding : 20px;  clear:both;}
+		/* td {
+			padding: 10px;
+			line-height: normal;
+			background-color: white;
+		} */
 
-a { text-decoration : none; }
-a:hover { text-decoration : underline; }
-a, a:visited { color : #0050e7; }
-.publogo { width: 100 px; margin-right : 0px; float : left; border : 0;}
-/*.publication { clear : left; padding-bottom : 10px;}*/
-.publication {}
-.publication p { height : 100px; padding-top : 5px;}
-.publication strong a { color : #0000A0; }
-.links { position : relative; top : 15px }
-.links a { margin-right : 20px; }
+		/* table {
+			border: 0;
+			margin: 10px 10px 30px 0px;
+			border-collapse: separate;
+			border-spacing: 0px;
+			background-color: white;
+		} */
 
-.paperTitle{ font-style: bold; margin-bottom: 1em;}
+		body {
+			padding: 0;
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 16px;
+			background-color: #ddd;
+		}
 
-.authors{margin-bottom: 0.5em;}
+		.container {
+			width: 1080px;
+			margin: 20px auto;
+			border-radius: 10px;
+			background-color: #fff;
+			padding: 20px;
+			clear: both;
+		}
 
-.avenue{font-style: italic; margin-bottom: 0.3em;}
+		a {
+			text-decoration: none;
+		}
 
-.codelogo { margin-right : 10px; float : left; border : 0;}
-.code { clear : left; padding-bottom : 10px; vertical-align :middle;} 
-.code .download a { display : block; margin : 0 15px; float : left;}
-.code strong a { color : #000; }
-.external a { margin : 0 10px; }
-.external a.first { margin : 0 10px 0 0; }
+		a:hover {
+			text-decoration: underline;
+		}
+
+		a,
+		a:visited {
+			color: #0050e7;
+		}
+
+		.publogo {
+			width: 100 px;
+			margin-right: 0px;
+			float: left;
+			border: 0;
+		}
+
+		/*.publication { clear : left; padding-bottom : 10px;}*/
+		/* .publication {} */
+
+		.publication p {
+			height: 100px;
+			padding-top: 5px;
+		}
+
+		.publication strong a {
+			color: #0000A0;
+		}
+
+		.links {
+			position: relative;
+			top: 15px
+		}
+
+		.links a {
+			margin-right: 20px;
+		}
+
+		.paperTitle {
+			font-style: bold;
+			margin-bottom: 1em;
+		}
+
+		.authors {
+			margin-bottom: 0.5em;
+		}
+
+		.avenue {
+			font-style: italic;
+			margin-bottom: 0.3em;
+		}
+
+		.codelogo {
+			margin-right: 10px;
+			float: left;
+			border: 0;
+		}
+
+		.code {
+			clear: left;
+			padding-bottom: 10px;
+			vertical-align: middle;
+		}
+
+		.code .download a {
+			display: block;
+			margin: 0 15px;
+			float: left;
+		}
+
+		.code strong a {
+			color: #0050e7;
+		}
+
+		.external a {
+			margin: 0 10px;
+		}
+
+		.external a.first {
+			margin: 0 10px 0 0;
+		}
+
+		.disclaimerbox {
+			background-color: #eee;
+			border: 1px solid #eeeeee;
+			border-radius: 10px;
+			-moz-border-radius: 10px;
+			-webkit-border-radius: 10px;
+			padding: 20px;
+		}
 	</style>
 </head>
 
 <body>
-	
+
 	<div class="container">
-		<!-- <HR size=2> -->
-		<h2>A New Comprehensive Benchmark for Semi-supervised Video Anomaly Detection and Anticipation</h2>
+		<center>
+			<h1>NWPU Campus dataset</h1>
+		</center>
+		<p align="middle">
+			<a href="https://scholar.google.com/citations?user=fB66KE0AAAAJ&hl=zh-CN&oi=ao"><strong>Congqi
+					Cao</strong></a> &nbsp;
+			<a href="https://orcid.org/0000-0002-9805-1732"><strong>Yue Lu</strong></a> &nbsp;
+			<a href="https://scholar.google.com/citations?hl=zh-CN&user=aPLp7pAAAAAJ&view_op=list_works&sortby=pubdate"><strong>Peng
+					Wang</strong></a> &nbsp;
+			<a href="https://dblp.org/pid/14/6655.html"><strong>Yanning Zhang</strong></a> &nbsp;
+		</p>
+
+		<p align="middle">
+			<strong>National Engineering Laboratory for Integrated Aero-Space-Ground-Ocean Big Data Application Technology (ASGO), School of Computer Science, Northwestern Polytechnical University, China</strong>
+		</p>
 		<p>
-			Congqi Cao, Yue Lu, Peng Wang and Yanning Zhang.
+			Paper: <em>A New Comprehensive Benchmark for Semi-supervised Video Anomaly Detection and Anticipation</em>
+		</p>
+
+		<p>
+			NWPU Campus is a dataset proposed for (semi-supervised) video anomaly detection (VAD) and video anomaly
+			anticipation (VAA).
+			It is currently the largest and most complex dataset in its field with 43 scenes, 28 classes of anomalous
+			events and 16 hours of videos.
+			Especially, it contains scene-dependent anomalies, which means an event may be normal in one scene but
+			abnormal in another.
 		</p>
 	</div>
 
-    <div class="container">
-		<!-- <HR size=2> -->
+	<div class="container">
 		<h2>Introduction</h2>
 		<p>
-			building
+			A number of scenes and normal and anomalous events are displayed in Figure 1. All the 28 classes of
+			anomalous events are listed in Table 1.<br>
+			Table 2 and Figure 2 show the statistics of the dataset, including durations and distributions.
 		</p>
+
+		<h3>
+			Samples
+		</h3>
+
+		<center>
+			<img src="figs/fig1.jpg" alt="fig1.jpg" width="960px">
+			<small align="middle">
+				<br>
+				Figure 1. Samples from the proposed NWPU Campus dataset. The samples in the first column are normal
+				events,
+				while the others are different types of anomalous events.
+			</small>
+		</center>
+
+		<h3>
+			Classes of anomalies
+		</h3>
+		<center>
+			<small>
+				Table 1. The list of anomaly classes in NWPU Campus dataset. "s.d." stands for a scene-dependent
+				anomaly.
+			</small>
+
+			<table border="1">
+				<tbody align="middle">
+					<tr>
+						<td> Climbing fence </td>
+						<td> Car crossing square </td>
+						<td> Cycling on footpath (s.d.) </td>
+						<td> Kicking trash can </td>
+					</tr>
+
+					<tr>
+						<td> Jaywalking </td>
+						<td> Snatching bag </td>
+						<td> Crossing lawn </td>
+						<td> Wrong turn (s.d.) </td>
+					</tr>
+					<tr>
+						<td> Cycling on square </td>
+						<td> Chasing </td>
+						<td> Loitering </td>
+						<td> Scuffle </td>
+					</tr>
+					<tr>
+						<td> Littering </td>
+						<td> Forgetting backpack </td>
+						<td> U-turn </td>
+						<td> Battering </td>
+					</tr>
+					<tr>
+						<td> Driving on wrong side </td>
+						<td> Falling </td>
+						<td> Suddenly stopping cycling in the middle of the road </td>
+						<td> Group conflict </td>
+					</tr>
+					<tr>
+						<td> Climbing tree </td>
+						<td> Stealing </td>
+						<td> Illegal parking </td>
+						<td> Trucks (s.d.) </td>
+					</tr>
+					<tr>
+						<td> Protest </td>
+						<td> Playing with water </td>
+						<td> Photographing in restricted area (s.d.) </td>
+						<td> Dogs </td>
+					</tr>
+				</tbody>
+
+			</table>
+		</center>
+
+		<h3>
+			Statistics
+		</h3>
+		<center>
+			<small>
+				Table 2. Frame count and duration of the NWPU Campus dataset.
+			</small>
+			<table border="1">
+				<tr>
+					<th colspan="3">NWPU Campus (25 FPS)</th>
+				</tr>
+				<tr>
+					<td colspan="3" align="middle">1,466,073 (16.29h)</td>
+				</tr>
+				<tr>
+					<th colspan="1">Training frames</th>
+					<th colspan="2">Testing frames</th>
+				</tr>
+				<tr>
+					<td>1,082,014 (12.02h)</td>
+					<td colspan="2" align="middle">384,059 (4.27h)</td>
+				</tr>
+				<tr>
+					<th>Normal</th>
+					<th>Normal</th>
+					<th>Abnormal</th>
+				</tr>
+				<tr>
+					<td>1,082,014 (12.02h)</td>
+					<td>318,793 (3.54h)</td>
+					<td>65,266 (0.73h)</td>
+				</tr>
+			</table>
+
+		</center>
+
+		<center>
+			<p>
+				<br>
+			</p>
+			<img src="figs/fig2.png" alt="fig2.jpg" width="480px">
+			<small align="middle">
+				<br>
+				Figure 2. The distributions of training and testing videos according to duration (a), <br> and abnormal
+				testing videos according to the percentage of abnormal frames in each video (b).
+			</small>
+		</center>
+
 	</div>
 
 	<div class="container">
-		<!-- <HR size=2> -->
-		<h2>Download dataset</h2>
+		<h2>Download the dataset</h2>
+
+		<h3>Terms & Conditions of use</h3>
 		<p>
-			TODO
+			The NWPU Campus dataset is released for academic research only, and is free to researchers from educational
+			or
+			research institutes for non-commercial purposes.
+			The use of the NWPU Campus dataset is governed by the following terms and conditions:
+		<ul>
+			<li>
+				Without the expressed permission of the ASGO Lab, any of the following will be considered illegal:
+				redistribution, derivation or generation of a new dataset from this dataset, and commercial usage of any
+				of these datasets in any way or form, either partially or in its entirety.
+
+			</li>
+			<li>
+				For the sake of privacy, images of all subjects in any of these datasets are only allowed for the
+				demonstration in academic publications and presentations.
+			</li>
+			<li>
+				All users of NWPU Campus dataset agree to indemnify, defend and hold harmless,
+				the ASGO Lab and its officers, employees, and agents, individually and collectively, from any and all
+				losses, expenses, and damages.
+			</li>
+		</ul>
+		We hold no liability for any undesirable consequences of using the dataset. All rights of the NWPU Campus dataset are reserved.
+
 		</p>
+		<h3>Download</h3>
+		<p>
+			There are 305 training videos and 242 testing videos in the NWPU Campus dataset. All the videos account for
+			76.6 GB disk space.
+		</p>
+		<strong>
+			Please note that most of the abnormal behaviors in the dataset are performed with careful protection.
+			Do not mimic these behaviors in reality.
+		</strong>
+		<p>
+			Download from <a href="">BaiduYun</a> or <a href="">Google Drive</a>
+		</p>
+
+	</div>
+
+	<div class="container">
+		<h2>Code</h2>
+		<p>
+			Github:
+		</p>
+
+	</div>
+
+	<div class="container">
+		<h2>Citation</h2>
+		<div class="disclaimerbox">
+			<pre>
+
+			</pre>
+		</div>
+		<a href="">Paper link</a>
+
 	</div>
 
 
+	<div class="container">
+		<h2>Contact</h2>
+		<p>
+			For further questions and suggestions, please contact Yue Lu (zugexiaodui@mail.nwpu.edu.cn).
+		</p>
+	</div>
 </body>
